@@ -1,40 +1,36 @@
 {
   "metadata": {
     "email": "23f2004001@ds.study.iitm.ac.in",
-    "version": "d59810b3",
-    "generatedAt": "2026-02-15T00:00:00Z"
+    "version": "d59810b3"
   },
   "products": [
-    { "id": "P001", "name": "Cotton Hoodie", "category": "clothing", "price": 199.99, "stock": 15, "rating": 4.4 },
-    { "id": "P002", "name": "Leather Jacket", "category": "clothing", "price": 514.51, "stock": 10, "rating": 4.7 },
+    { "id": "prod-d59810b3-001", "name": "Cotton Hoodie", "category": "clothing", "price": 199.99, "stock": 15, "rating": 4.4 },
+    { "id": "prod-d59810b3-002", "name": "Leather Jacket", "category": "clothing", "price": 514.51, "stock": 10, "rating": 4.7 },
 
-    { "id": "P003", "name": "Wireless Earbuds", "category": "electronics", "price": 79.99, "stock": 120, "rating": 4.3 },
-    { "id": "P004", "name": "Smartwatch", "category": "electronics", "price": 149.50, "stock": 60, "rating": 4.2 },
-    { "id": "P005", "name": "USB-C Charger 65W", "category": "electronics", "price": 29.99, "stock": 200, "rating": 4.6 },
+    { "id": "prod-d59810b3-003", "name": "Wireless Earbuds", "category": "electronics", "price": 79.99, "stock": 120, "rating": 4.3 },
+    { "id": "prod-d59810b3-004", "name": "Smartwatch", "category": "electronics", "price": 149.50, "stock": 60, "rating": 4.2 },
+    { "id": "prod-d59810b3-005", "name": "USB-C Charger", "category": "electronics", "price": 29.99, "stock": 200, "rating": 4.6 },
 
-    { "id": "P006", "name": "Stainless Steel Water Bottle", "category": "home", "price": 19.95, "stock": 180, "rating": 4.5 },
-    { "id": "P007", "name": "LED Desk Lamp", "category": "home", "price": 34.90, "stock": 85, "rating": 4.1 },
-    { "id": "P008", "name": "Non-stick Frying Pan", "category": "home", "price": 39.99, "stock": 70, "rating": 4.4 },
+    { "id": "prod-d59810b3-006", "name": "Water Bottle", "category": "home", "price": 19.95, "stock": 180, "rating": 4.5 },
+    { "id": "prod-d59810b3-007", "name": "Desk Lamp", "category": "home", "price": 34.90, "stock": 85, "rating": 4.1 },
+    { "id": "prod-d59810b3-008", "name": "Frying Pan", "category": "home", "price": 39.99, "stock": 70, "rating": 4.4 },
 
-    { "id": "P009", "name": "Notebook (A5, Ruled)", "category": "stationery", "price": 4.99, "stock": 500, "rating": 4.0 },
-    { "id": "P010", "name": "Gel Pen Set (10 pcs)", "category": "stationery", "price": 7.49, "stock": 300, "rating": 4.2 },
+    { "id": "prod-d59810b3-009", "name": "Notebook", "category": "stationery", "price": 4.99, "stock": 500, "rating": 4.0 },
+    { "id": "prod-d59810b3-010", "name": "Pen Set", "category": "stationery", "price": 7.49, "stock": 300, "rating": 4.2 },
 
-    { "id": "P011", "name": "Paperback Novel", "category": "books", "price": 12.99, "stock": 150, "rating": 4.6 },
-    { "id": "P012", "name": "Data Science Handbook", "category": "books", "price": 39.00, "stock": 40, "rating": 4.8 },
+    { "id": "prod-d59810b3-011", "name": "Novel Book", "category": "books", "price": 12.99, "stock": 150, "rating": 4.6 },
+    { "id": "prod-d59810b3-012", "name": "Data Science Book", "category": "books", "price": 39.00, "stock": 40, "rating": 4.8 },
 
-    { "id": "P013", "name": "Face Moisturizer", "category": "beauty", "price": 15.75, "stock": 110, "rating": 4.1 },
-    { "id": "P014", "name": "Sunscreen SPF 50", "category": "beauty", "price": 18.50, "stock": 90, "rating": 4.3 },
+    { "id": "prod-d59810b3-013", "name": "Moisturizer", "category": "beauty", "price": 15.75, "stock": 110, "rating": 4.1 },
+    { "id": "prod-d59810b3-014", "name": "Sunscreen", "category": "beauty", "price": 18.50, "stock": 90, "rating": 4.3 },
 
-    { "id": "P015", "name": "Yoga Mat", "category": "sports", "price": 24.99, "stock": 95, "rating": 4.4 },
-    { "id": "P016", "name": "Resistance Band Set", "category": "sports", "price": 17.99, "stock": 140, "rating": 4.2 }
+    { "id": "prod-d59810b3-015", "name": "Yoga Mat", "category": "sports", "price": 24.99, "stock": 95, "rating": 4.4 },
+    { "id": "prod-d59810b3-016", "name": "Resistance Bands", "category": "sports", "price": 17.99, "stock": 140, "rating": 4.2 }
   ],
   "aggregations": {
-    "clothing": { "count": 2, "inventoryValue": 8144.95, "avgPrice": 357.25, "avgRating": 4.55 },
-    "electronics": { "count": 3, "inventoryValue": 24566.80, "avgPrice": 86.49, "avgRating": 4.37 },
-    "home": { "count": 3, "inventoryValue": 9356.80, "avgPrice": 31.61, "avgRating": 4.33 },
-    "stationery": { "count": 2, "inventoryValue": 4742.00, "avgPrice": 6.24, "avgRating": 4.10 },
-    "books": { "count": 2, "inventoryValue": 3508.50, "avgPrice": 26.00, "avgRating": 4.70 },
-    "beauty": { "count": 2, "inventoryValue": 3397.50, "avgPrice": 17.12, "avgRating": 4.20 },
-    "sports": { "count": 2, "inventoryValue": 4892.65, "avgPrice": 21.49, "avgRating": 4.30 }
+    "clothing": {
+      "count": 2,
+      "inventoryValue": 8144.95
+    }
   }
 }
