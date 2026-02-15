@@ -4,33 +4,28 @@
     "version": "d59810b3"
   },
   "products": [
-    { "id": "prod-d59810b3-001", "name": "Cotton Hoodie", "category": "clothing", "price": 199.99, "stock": 15, "rating": 4.4 },
-    { "id": "prod-d59810b3-002", "name": "Leather Jacket", "category": "clothing", "price": 514.51, "stock": 10, "rating": 4.7 },
-
-    { "id": "prod-d59810b3-003", "name": "Wireless Earbuds", "category": "electronics", "price": 79.99, "stock": 120, "rating": 4.3 },
-    { "id": "prod-d59810b3-004", "name": "Smartwatch", "category": "electronics", "price": 149.50, "stock": 60, "rating": 4.2 },
-    { "id": "prod-d59810b3-005", "name": "USB-C Charger", "category": "electronics", "price": 29.99, "stock": 200, "rating": 4.6 },
-
-    { "id": "prod-d59810b3-006", "name": "Water Bottle", "category": "home", "price": 19.95, "stock": 180, "rating": 4.5 },
-    { "id": "prod-d59810b3-007", "name": "Desk Lamp", "category": "home", "price": 34.90, "stock": 85, "rating": 4.1 },
-    { "id": "prod-d59810b3-008", "name": "Frying Pan", "category": "home", "price": 39.99, "stock": 70, "rating": 4.4 },
-
-    { "id": "prod-d59810b3-009", "name": "Notebook", "category": "stationery", "price": 4.99, "stock": 500, "rating": 4.0 },
-    { "id": "prod-d59810b3-010", "name": "Pen Set", "category": "stationery", "price": 7.49, "stock": 300, "rating": 4.2 },
-
-    { "id": "prod-d59810b3-011", "name": "Novel Book", "category": "books", "price": 12.99, "stock": 150, "rating": 4.6 },
-    { "id": "prod-d59810b3-012", "name": "Data Science Book", "category": "books", "price": 39.00, "stock": 40, "rating": 4.8 },
-
-    { "id": "prod-d59810b3-013", "name": "Moisturizer", "category": "beauty", "price": 15.75, "stock": 110, "rating": 4.1 },
-    { "id": "prod-d59810b3-014", "name": "Sunscreen", "category": "beauty", "price": 18.50, "stock": 90, "rating": 4.3 },
-
-    { "id": "prod-d59810b3-015", "name": "Yoga Mat", "category": "sports", "price": 24.99, "stock": 95, "rating": 4.4 },
-    { "id": "prod-d59810b3-016", "name": "Resistance Bands", "category": "sports", "price": 17.99, "stock": 140, "rating": 4.2 }
+    { "id": "prod-d59810b3-001", "name": "Pro Item 1", "category": "home", "price": 25.22, "stock": 85, "rating": 2.8 },
+    { "id": "prod-d59810b3-002", "name": "Standard Item 2", "category": "sports", "price": 360.89, "stock": 111, "rating": 3.7 },
+    { "id": "prod-d59810b3-003", "name": "Premium Item 3", "category": "books", "price": 102.96, "stock": 134, "rating": 2.7 },
+    { "id": "prod-d59810b3-004", "name": "Premium Item 4", "category": "home", "price": 463.7, "stock": 20, "rating": 1.4 },
+    { "id": "prod-d59810b3-005", "name": "Standard Item 5", "category": "books", "price": 171.47, "stock": 198, "rating": 4.9 },
+    { "id": "prod-d59810b3-006", "name": "Standard Item 6", "category": "home", "price": 463.14, "stock": 86, "rating": 2.2 },
+    { "id": "prod-d59810b3-007", "name": "Pro Item 7", "category": "clothing", "price": 304.45, "stock": 22, "rating": 1.4 },
+    { "id": "prod-d59810b3-008", "name": "Standard Item 8", "category": "books", "price": 178.94, "stock": 71, "rating": 2.2 },
+    { "id": "prod-d59810b3-009", "name": "Pro Item 9", "category": "books", "price": 176.09, "stock": 132, "rating": 2.7 },
+    { "id": "prod-d59810b3-010", "name": "Premium Item 10", "category": "electronics", "price": 291.03, "stock": 78, "rating": 3.9 },
+    { "id": "prod-d59810b3-011", "name": "Premium Item 11", "category": "electronics", "price": 370.52, "stock": 156, "rating": 3.7 },
+    { "id": "prod-d59810b3-012", "name": "Elite Item 12", "category": "clothing", "price": 289.41, "stock": 5, "rating": 2.3 },
+    { "id": "prod-d59810b3-013", "name": "Standard Item 13", "category": "electronics", "price": 264.54, "stock": 50, "rating": 1.7 },
+    { "id": "prod-d59810b3-014", "name": "Premium Item 14", "category": "electronics", "price": 90.53, "stock": 197, "rating": 4.0 },
+    { "id": "prod-d59810b3-015", "name": "Premium Item 15", "category": "sports", "price": 341.99, "stock": 32, "rating": 1.1 },
+    { "id": "prod-d59810b3-016", "name": "Standard Item 16", "category": "sports", "price": 220.96, "stock": 20, "rating": 2.0 }
   ],
   "aggregations": {
-    "clothing": {
-      "count": 2,
-      "inventoryValue": 8144.95
-    }
+    "home": { "count": 3, "inventoryValue": 51247.74 },
+    "sports": { "count": 3, "inventoryValue": 55421.67 },
+    "books": { "count": 4, "inventoryValue": 83696.32 },
+    "clothing": { "count": 2, "inventoryValue": 8144.95 },
+    "electronics": { "count": 4, "inventoryValue": 111562.87 }
   }
 }
