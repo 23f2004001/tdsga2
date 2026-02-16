@@ -1,27 +1,42 @@
-name: CI Cache Workflow
+name: CI with Cache
 
 on:
   push:
+    branches: [ "main" ]
   workflow_dispatch:
 
 jobs:
   build:
     runs-on: ubuntu-latest
+
     steps:
-      - name: Checkout code
+      - name: Checkout
         uses: actions/checkout@v4
 
-      - name: Cache dependencies
-        id: cache
+      # Example for Python projects (pip cache)
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+
+      - name: Cache pip
+        id: cache-pip
         uses: actions/cache@v4
         with:
-          path: ~/.cache/pip
-          key: cache-1f57c44
+          path: |
+            ~/.cache/pip
+          key: cache-1f57c44-${{ runner.os }}-${{ hashFiles('**/requirements*.txt') }}
+          restore-keys: |
+            cache-1f57c44-${{ runner.os }}-
 
       - name: prime-cache-1f57c44
-        run: echo "cache-hit=${{ steps.cache.outputs.cache-hit }}"
+        run: echo "cache-hit=${{ steps.cache-pip.outputs.cache-hit }}"
 
-      - name: Prime some files into cache dir
+      - name: Install dependencies
         run: |
-          mkdir -p ~/.cache/pip
-          echo "primed at $(date)" > ~/.cache/pip/prime.txt
+          python -m pip install --upgrade pip
+          if [ -f requirements.txt ]; then pip install -r requirements.txt; fi
+
+      - name: Run tests (placeholder)
+        run: |
+          echo "CI ran"
