@@ -1,0 +1,28 @@
+name: CI Cache Workflow
+
+on:
+  push:
+  workflow_dispatch:
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v4
+
+      - name: Cache dependencies
+        id: cache
+        uses: actions/cache@v4
+        with:
+          path: ~/.cache
+          key: cache-1f57c44
+
+      - name: prime-cache-1f57c44
+        run: echo "Cache hit: ${{ steps.cache.outputs.cache-hit }}"
+
+      - name: Install dependencies
+        run: |
+          mkdir -p ~/.cache
+          echo "Priming cache directory"
